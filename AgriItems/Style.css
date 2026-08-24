@@ -1,0 +1,1700 @@
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #ffffff;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    background-color: white;
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo {
+    width: 80px;
+    height: auto;
+
+    flex-shrink: 0;
+}
+
+
+/* =====================================================
+   COMPANY NAME
+   ===================================================== */
+
+.company-name {
+    line-height: 1;
+
+    flex-shrink: 0;
+}
+
+.company-title {
+    color: #14431b;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.company-subtitle {
+    color: #14431b;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-top: 4px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 6px;
+
+    color: #333;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   SEARCH
+   ===================================================== */
+
+.search {
+    display: flex;
+
+    width: 350px;
+
+    margin-left: auto;
+
+    flex-shrink: 0;
+}
+
+.search input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    border-radius: 5px 0 0 5px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+}
+
+.search button {
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 0 5px 5px 0;
+
+    background-color: #14431b;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #0d3213;
+}
+
+
+/* =====================================================
+   WHATSAPP / CALL CONTACT
+   ===================================================== */
+
+.whatsapp-contact {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-left: 10px;
+
+    color: #222;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background-color: #128c7e;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    transition: 0.2s ease;
+}
+
+.whatsapp-details {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.2;
+}
+
+.whatsapp-details small {
+    color: #222;
+
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.whatsapp-details strong {
+    color: #222;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.whatsapp-details span {
+    color: #555;
+
+    font-size: 8px;
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+.whatsapp-contact:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+.whatsapp-contact:hover .whatsapp-icon {
+    background-color: #075e54;
+
+    transform: scale(1.05);
+}
+
+.whatsapp-contact:hover strong {
+    color: #128c7e;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 45px;
+
+    gap: 10px;
+
+    padding: 5px;
+
+    background-color: #14431b;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #f7e45b;
+}
+
+
+/* =====================================================
+   ENQUIRE LINK
+   ===================================================== */
+
+.enquire-link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   NAVIGATION BUTTONS
+   ===================================================== */
+
+nav button {
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 8px 15px;
+
+    background-color: #f7e45b;
+
+    color: #14431b;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #d5df20;
+}
+
+#AllCat {
+    margin-left: 17px;
+}
+
+#btn {
+    margin-right: 17px;
+}
+
+
+/* =====================================================
+   MAIN BANNER / SLIDER
+   ===================================================== */
+
+.slider {
+    position: relative;
+
+    width: 100%;
+
+    height: 380px;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+}
+
+
+/* =====================================================
+   IMAGE SLIDER
+   ===================================================== */
+
+.image-slider {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.image-track {
+    display: flex;
+
+    width: 400%;
+    height: 100%;
+
+    transform: translateX(0);
+
+    transition: transform 0.8s ease-in-out;
+}
+
+.image-track img {
+    width: 25%;
+    height: 100%;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+/* =====================================================
+   SOFT WHITE TRANSPARENT FADE
+   ===================================================== */
+
+.slider::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 62%;
+    height: 100%;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background: linear-gradient(
+        to right,
+
+        rgba(255, 255, 255, 1) 0%,
+
+        rgba(255, 255, 255, 0.99) 10%,
+
+        rgba(255, 255, 255, 0.95) 20%,
+
+        rgba(255, 255, 255, 0.82) 32%,
+
+        rgba(255, 255, 255, 0.62) 45%,
+
+        rgba(255, 255, 255, 0.38) 58%,
+
+        rgba(255, 255, 255, 0.15) 75%,
+
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+
+/* =====================================================
+   SLIDER TEXT
+   ===================================================== */
+
+.slider-text {
+    position: absolute;
+
+    top: -70px;
+    left: 0;
+
+    z-index: 3;
+
+    width: 52%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding-left: 8%;
+    padding-right: 20px;
+}
+
+
+/* =====================================================
+   SLIDER HEADING
+   ===================================================== */
+
+.slider-text h3 {
+    margin: 0 0 18px;
+
+    color: #14431b;
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+    line-height: 1.08;
+}
+
+.slider-text h3 .text-warning {
+    color: #ffb000 !important;
+}
+
+
+/* =====================================================
+   SLIDER PARAGRAPH
+   ===================================================== */
+
+.slider-text p {
+    margin: 4px 0;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   SLIDER CONTENT BUTTONS
+   ===================================================== */
+
+.slider-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.slider-buttons button {
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 11px 18px;
+
+    background-color: #14431b;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.slider-buttons button:hover {
+    background-color: #0d3213;
+}
+
+
+/* =====================================================
+   SLIDER ARROW BUTTONS
+   ===================================================== */
+
+.slide-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 20;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.90);
+
+    color: #555;
+
+    font-size: 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    transition: 0.2s ease;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.slide-arrow:hover {
+    background-color: #14431b;
+
+    color: white;
+
+    transform: translateY(-50%) scale(1.05);
+}
+
+
+/* =====================================================
+   CATEGORY GRID
+   EXACTLY 9 BOXES
+   ===================================================== */
+
+.categories-section {
+    position: relative;
+
+    z-index: 10;
+
+    display: grid;
+
+    grid-template-columns: repeat(9, 1fr);
+
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: -35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 6px;
+
+    padding: 0;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CATEGORY BOX
+   ===================================================== */
+
+.category-box {
+    min-height: 110px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 10px 5px;
+
+    border-right: 1px solid #eeeeee;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.category-box:first-child {
+    border-left: none;
+}
+
+.category-box:last-child {
+    border-right: none;
+}
+
+.category-box:hover {
+    background-color: #f7faf7;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   CATEGORY IMAGE
+   ===================================================== */
+
+.category-box img {
+    width: 70px;
+    height: 55px;
+
+    object-fit: contain;
+
+    margin-bottom: 6px;
+}
+
+
+/* =====================================================
+   CATEGORY NAME
+   ===================================================== */
+
+.category-box span {
+    color: #222;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+}
+
+
+/* =====================================================
+   FEATURED PRODUCTS
+   ===================================================== */
+
+.featured-section {
+    width: 90%;
+
+    margin: 0 auto;
+
+    padding: 15px 0 30px;
+
+    background-color: #ffffff;
+}
+
+
+/* =====================================================
+   FEATURED HEADER
+   ===================================================== */
+
+.featured-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.featured-header h2 {
+    margin: 0;
+
+    color: #222;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   VIEW ALL PRODUCTS BUTTON
+   ===================================================== */
+
+.featured-header button {
+    border: 1px solid #14431b;
+
+    border-radius: 4px;
+
+    padding: 6px 12px;
+
+    background-color: white;
+
+    color: #14431b;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.featured-header button:hover {
+    background-color: #14431b;
+
+    color: white;
+}
+
+
+/* =====================================================
+   PRODUCT GRID
+   ===================================================== */
+
+.products-grid {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 8px;
+
+    width: 100%;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+   ===================================================== */
+
+.product-card {
+    display: flex;
+
+    align-items: center;
+
+    min-height: 115px;
+
+    padding: 8px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 4px;
+
+    background-color: white;
+
+    transition: 0.2s ease;
+
+    cursor: pointer;
+}
+
+.product-card:hover {
+    border-color: #14431b;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+   ===================================================== */
+
+.product-card img {
+    width: 85px;
+    height: 80px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+    margin-right: 6px;
+}
+
+
+/* =====================================================
+   PRODUCT INFORMATION
+   ===================================================== */
+
+.product-details {
+    min-width: 0;
+}
+
+.product-details h3 {
+    margin: 0 0 4px;
+
+    color: #222;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+.product-details strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #14431b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.product-details p {
+    margin: 2px 0;
+
+    color: #555;
+
+    font-size: 7px;
+
+    line-height: 1.2;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    width: 100%;
+
+    margin-top: 20px;
+
+    background-color: #004d1a;
+
+    color: white;
+}
+
+
+/* =====================================================
+   FOOTER MAIN
+   ===================================================== */
+
+.footer-main {
+    display: grid;
+
+    grid-template-columns:
+        1.3fr
+        0.9fr
+        1fr
+        0.9fr
+        1.5fr
+        0.9fr;
+
+    width: 100%;
+
+    padding: 15px 4% 10px;
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+   ===================================================== */
+
+.footer-column {
+    min-width: 0;
+
+    padding: 0 18px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.footer-column:first-child {
+    padding-left: 0;
+}
+
+.footer-column:last-child {
+    border-right: none;
+}
+
+
+/* =====================================================
+   FOOTER HEADINGS
+   ===================================================== */
+
+.footer-column h4 {
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   FOOTER TEXT
+   ===================================================== */
+
+.footer-column p {
+    margin: 0 0 7px;
+
+    color: #eeeeee;
+
+    font-size: 8px;
+
+    line-height: 1.45;
+}
+
+
+/* =====================================================
+   FOOTER LINKS
+   ===================================================== */
+
+.footer-column a {
+    width: fit-content;
+
+    margin-bottom: 4px;
+
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    font-size: 8px;
+
+    line-height: 1.2;
+}
+
+.footer-column a:hover {
+    color: #f7e45b;
+}
+
+
+/* =====================================================
+   READ MORE
+   ===================================================== */
+
+.footer-column .read-more {
+    margin-top: 5px;
+
+    color: #f7e45b;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact-column a {
+    margin-bottom: 6px;
+
+    color: white;
+
+    font-size: 8px;
+}
+
+
+/* =====================================================
+   MAP BUTTON
+   ===================================================== */
+
+.map-button {
+    width: fit-content;
+    margin-top: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d2f3ae;
+    color: #7dba87;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.map-button:hover {
+    background-color: rgb(121, 182, 235);
+}
+
+
+/* =====================================================
+   QR CODE
+   ===================================================== */
+
+.qr-column {
+    align-items: center;
+
+    text-align: center;
+}
+
+.qr-column p {
+    margin-bottom: 5px;
+}
+
+.qr-column img {
+    width: 75px;
+    height: 75px;
+
+    padding: 3px;
+
+    background-color: white;
+
+    object-fit: contain;
+
+    border-radius: 3px;
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+   ===================================================== */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 7px 4%;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    background-color: #003d15;
+}
+
+
+/* =====================================================
+   COPYRIGHT
+   ===================================================== */
+
+.copyright {
+    color: #eeeeee;
+
+    font-size: 7px;
+}
+
+
+/* =====================================================
+   PAYMENT METHODS
+   ===================================================== */
+
+.payments {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: white;
+
+    font-size: 8px;
+}
+
+.payment-box {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 38px;
+
+    height: 20px;
+
+    padding: 2px 5px;
+
+    background-color: white;
+
+    color: #14431b;
+
+    border-radius: 3px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+    /* HEADER */
+
+    header {
+        gap: 10px;
+
+        padding: 12px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+
+    /* COMPANY */
+
+    .company-title {
+        font-size: 18px;
+    }
+
+    .company-subtitle {
+        font-size: 15px;
+    }
+
+    .location {
+        font-size: 9px;
+    }
+
+
+    /* SEARCH */
+
+    .search {
+        width: 250px;
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp-contact {
+        margin-left: 5px;
+    }
+
+    .whatsapp-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .whatsapp-details strong {
+        font-size: 11px;
+    }
+
+    .whatsapp-details small {
+        font-size: 8px;
+    }
+
+    .whatsapp-details span {
+        font-size: 7px;
+    }
+
+
+    /* NAVIGATION */
+
+    .links {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    nav button {
+        padding: 7px 10px;
+
+        font-size: 9px;
+    }
+
+    #AllCat {
+        margin-left: 5px;
+    }
+
+    #btn {
+        margin-right: 5px;
+    }
+
+
+    /* BANNER */
+
+    .slider {
+        width: 100%;
+
+        height: 320px;
+    }
+
+    .slider-text {
+        width: 55%;
+
+        padding-left: 6%;
+        padding-right: 15px;
+    }
+
+    .slider-text h3 {
+        font-size: 30px;
+    }
+
+    .slider-text p {
+        font-size: 11px;
+    }
+
+    .slider::before {
+        width: 65%;
+    }
+
+
+    /* ARROWS */
+
+    .slide-arrow {
+        width: 35px;
+        height: 35px;
+
+        font-size: 20px;
+    }
+
+    .left-arrow {
+        left: 12px;
+    }
+
+    .right-arrow {
+        right: 12px;
+    }
+
+
+    /* CATEGORY */
+
+    .categories-section {
+        grid-template-columns: repeat(5, 1fr);
+
+        width: 94%;
+
+        margin-top: -30px;
+    }
+
+    .category-box {
+        border-bottom: 1px solid #eeeeee;
+    }
+
+
+    /* PRODUCTS */
+
+    .featured-section {
+        width: 94%;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* FOOTER */
+
+    .footer-main {
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 20px;
+
+        padding: 20px 4%;
+    }
+
+    .footer-column {
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    header {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        padding: 10px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+
+    /* COMPANY */
+
+    .company-title {
+        font-size: 16px;
+    }
+
+    .company-subtitle {
+        font-size: 13px;
+    }
+
+    .location {
+        font-size: 9px;
+    }
+
+
+    /* SEARCH */
+
+    .search {
+        width: 90%;
+
+        margin-left: 0;
+    }
+
+    .search input {
+        font-size: 11px;
+    }
+
+    .search button {
+        padding: 10px 15px;
+
+        font-size: 10px;
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp-contact {
+        width: 90%;
+
+        margin-left: 0;
+
+        justify-content: center;
+    }
+
+    .whatsapp-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .whatsapp-details strong {
+        font-size: 12px;
+    }
+
+    .whatsapp-details small {
+        font-size: 8px;
+    }
+
+    .whatsapp-details span {
+        font-size: 7px;
+    }
+
+
+    /* NAVIGATION */
+
+    nav {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+
+        padding: 10px;
+    }
+
+    .links {
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    nav button {
+        padding: 8px 15px;
+
+        font-size: 11px;
+    }
+
+    #AllCat {
+        margin-left: 0;
+    }
+
+    #btn {
+        margin-right: 0;
+    }
+
+
+    /* =================================================
+       MOBILE BANNER
+       ================================================= */
+
+    .slider {
+        width: 100%;
+
+        height: 430px;
+    }
+
+
+    /* IMAGE */
+
+    .image-slider {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* IMAGE TRACK */
+
+    .image-track {
+        width: 400%;
+
+        height: 100%;
+    }
+
+    .image-track img {
+        width: 25%;
+
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* MOBILE ARROWS */
+
+    .slide-arrow {
+        width: 35px;
+        height: 35px;
+
+        font-size: 20px;
+    }
+
+    .left-arrow {
+        left: 10px;
+    }
+
+    .right-arrow {
+        right: 10px;
+    }
+
+
+    /* MOBILE WHITE FADE */
+
+    .slider::before {
+        width: 100%;
+
+        height: 65%;
+
+        background: linear-gradient(
+            to bottom,
+
+            rgba(255, 255, 255, 1) 0%,
+
+            rgba(255, 255, 255, 0.98) 20%,
+
+            rgba(255, 255, 255, 0.85) 38%,
+
+            rgba(255, 255, 255, 0.55) 55%,
+
+            rgba(255, 255, 255, 0.15) 75%,
+
+            rgba(255, 255, 255, 0) 100%
+        );
+    }
+
+
+    /* MOBILE TEXT */
+
+    .slider-text {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        z-index: 3;
+
+        width: 100%;
+        height: 65%;
+
+        padding: 25px;
+
+        justify-content: center;
+    }
+
+    .slider-text h3 {
+        font-size: 27px;
+
+        line-height: 1.08;
+
+        margin-bottom: 10px;
+    }
+
+    .slider-text p {
+        font-size: 10px;
+
+        margin: 2px 0;
+    }
+
+
+    /* MOBILE BUTTONS */
+
+    .slider-buttons {
+        margin-top: 12px;
+
+        gap: 6px;
+    }
+
+    .slider-buttons button {
+        padding: 8px 10px;
+
+        font-size: 8px;
+    }
+
+
+    /* MOBILE CATEGORY GRID */
+
+    .categories-section {
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 94%;
+
+        margin-top: -25px;
+
+        padding: 0;
+
+        border-radius: 5px;
+    }
+
+    .category-box {
+        min-height: 105px;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .category-box img {
+        width: 65px;
+
+        height: 50px;
+    }
+
+    .category-box span {
+        font-size: 9px;
+    }
+
+
+    /* MOBILE FEATURED PRODUCTS */
+
+    .featured-section {
+        width: 94%;
+
+        padding: 15px 0 25px;
+    }
+
+    .featured-header h2 {
+        font-size: 14px;
+    }
+
+    .featured-header button {
+        font-size: 8px;
+
+        padding: 5px 8px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 6px;
+    }
+
+    .product-card {
+        min-height: 105px;
+
+        padding: 5px;
+    }
+
+    .product-card img {
+        width: 65px;
+
+        height: 65px;
+    }
+
+    .product-details h3 {
+        font-size: 8px;
+    }
+
+    .product-details strong {
+        font-size: 10px;
+    }
+
+    .product-details p {
+        font-size: 6px;
+    }
+
+
+    /* =================================================
+       MOBILE FOOTER
+       ================================================= */
+
+    .footer-main {
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+
+    .footer-column {
+        padding: 15px 0;
+
+        border-right: none;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .footer-column:first-child {
+        padding-top: 0;
+    }
+
+    .footer-column:last-child {
+        border-bottom: none;
+    }
+
+    .qr-column {
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+
+        padding: 10px 20px;
+    }
+
+    .payments {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+}
